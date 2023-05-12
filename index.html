@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Corinthia&family=Montserrat:wght@400;500&family=Red+Hat+Mono&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/f5a70fd252.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Stopwatch</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="icon">
+				<i class="fa-solid fa-paint-roller"></i>
+				<i class="fa-solid fa-question"></i>
+			</div>
+			<div class="colors animation">
+				<div class="color purple"></div>
+				<div class="color orange"></div>
+				<div class="color tomato"></div>
+				<div class="color blue"></div>
+			</div>
+			<h1>Stoper</h1>
+			<p class="stopwatch">0:00.<span class="millisecond">00</span></p>
+			<p class="time">0:00.<span class="millisecond">00</span></p>
+			<div class="buttons">
+				<button class="play"><i class="fa-solid fa-play"></i></button>
+				<button class="pause"><i class="fa-solid fa-pause"></i></button>
+				<button class="stop"><i class="fa-solid fa-stop"></i></button>
+				<button class="delate"><i class="fa-solid fa-xmark"></i></button>
+				<button class="archive">Archiwum</button>
+			</div>
+			<ul class="time-list"></ul>
+		</div>
+		<div class="instruction animation">
+			<div class="box-instruction">
+				<h3>Instrukcja:</h3>
+				<p><i class="fa-solid fa-play"></i> - start</p>
+				<p><i class="fa-solid fa-pause"></i> - pauza</p>
+				<p>
+					<i class="fa-solid fa-stop"></i> - wyzerowanie stopera oraz dodanie do
+					archiwum
+				</p>
+				<p>
+					<i class="fa-solid fa-xmark"></i> - wyzerowanie stopera łącznie z
+					archiwum
+				</p>
+				<p><span clas>archiwum</span> - zobacz wcześniejsze pomiary</p>
+				<button class="close">Zamknij</button>
+			</div>
+		</div>
+		<span class="ja author">Autor</span>
+		<span class="ja name">Sojka Tomasz</span>
+		<script src="./js/script.js"></script>
+	</body>
+</html>
